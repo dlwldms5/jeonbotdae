@@ -21,3 +21,25 @@ import numpy as np
 from math import atan2, degrees, sqrt
 from google.colab import files
 
+
+# 0726 과제4 - 차량 추적 및 충돌 예측 시스템
+
+
+##  프로젝트 설명
+영상 속 차량을 추적하여 이동 경로와 속도를 계산하고, 차량 간의 충돌 시간을 예측합니다.  
+충돌 예상 시간이 2초 이하일 경우 경고 로그를 출력하며, 결과 영상을 생성합니다.
+
+##  사용법
+1. Google Colab에서 코드 실행  
+2. 분석할 차량 영상 업로드  
+3. 실행 완료 후 아래 두 파일 다운로드  
+   - `collision_warning_output.mp4` : 결과 영상  
+   - `collision_log.txt` : 충돌 경고 로그
+
+##  설치 방법
+
+```python
+import cv2
+import numpy as np
+from math import atan2, degrees, sqrt
+from google.colab import files
